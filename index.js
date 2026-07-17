@@ -4,6 +4,8 @@ const app = express();
 
 const PORT = process.env.PORT ?? 8000 ;
 
+app.use(express.json())
+
 app.get('/', (req, res)=>{
     console.log('server is up and runing');
 })
